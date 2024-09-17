@@ -1,0 +1,150 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.message{
+    background-color: rgb(255, 243, 243);
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.message-right{
+    justify-content: flex-end;
+}
+
+.message-plain{
+   padding-left: 0.5rem;
+}
+
+.message-row{
+    display: flex;
+}
+
+/* .messageSent{
+    background-color: rgb(255, 243, 243);
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.messageText{
+    padding-left: 1rem;
+} */
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    /* border-right: 1px solid #ddd; */
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.main-panel {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    /* border: 1px solid silver; */
+    background-color: white;
+    margin-right: 15rem;
+    margin-top: 3rem;
+}
+
+
+
+header {
+    background-color: #446167;
+    /* background-color: #a88e75; */
+    color: white;
+    padding-left: 2rem;
+    text-align: left;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.chat-area {
+    flex: 1;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid rgb(244,244,244);
+    border-radius: 4px;
+    background-color: rgb(244,244,244);
+    height: 50px; /* Increased height */
+    resize: none; /* Prevent resizing */
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+#messageInput:focus {
+    outline: none; /* Remove default focus outline */
+    border: 1px solid #ccc; /* Keep the border same as normal state */
+}
+
+button {
+    padding: 10px;
+    margin-left: 10px;
+    width:60px;
+    border: none;
+    background-color: #446167;;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #446167;;
+}
+
+
+.rocket-icon {
+    font-size: 24px;
+    /* width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #83878b;  */
+}
+
+
+
+.message-command {
+    font-family: monospace; /* Use a monospaced font */
+    background-color: #474545;
+    color: #ffffff; /* Light gray text color */
+    width: 50% !important;
+    border: 1px solid #333; 
+    padding: 10px; 
+    border-radius: 5px; 
+    overflow-x: auto;
+    padding-left: 1rem;
+}
